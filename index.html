@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista sinistra</title>
+</head>
+<body>
+    <h1>Lista de tarefas SINISTRA</h1>
+    <input type="text" placeholder="escreva sua tarefa"> <button onclick="Enviar()">Enviar</button>
+    <h2>tarefas:</h2>
+    <ul>  
+        <li>treinar</li> 
+        <li>casar com meu amor</li>
+        <li>ficar rico</li>
+    </ul>
+    <script>
+        function Enviar(){
+        const input = document.querySelector('input')
+        const tarefa = input.value; 
+        input.value = ''
+        }
+        function render(){
+            const ul = document.querySelector('ul')
+            const li = document.querySelector('li')
+            li.innerText= li
+        }
+    </script>
+</body>
+</html>
